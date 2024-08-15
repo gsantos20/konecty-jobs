@@ -73,7 +73,7 @@ As seguintes ferramentas foram usadas na construção do projeto:
 #### **Web App**  ([Next.js](https://nextjs.org/)  +  [TypeScript](https://www.typescriptlang.org/)  +  [Tailwind](https://tailwindcss.com/))
 
 -   **[Prisma](https://www.prisma.io/)**
--   **[Shacdn/ui]https://ui.shadcn.com/)**
+-   **[Shacdn/ui](https://ui.shadcn.com/)**
 -   **[react-icons](https://react-icons.github.io/react-icons/)**
 -   **[zod](https://zod.dev/)**
 -   **[zod-form-data](https://www.npmjs.com/package/zod-form-data)**
