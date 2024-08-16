@@ -14,7 +14,6 @@ export async function GET() {
         }
       },
       omit: {
-        id: true,
         categoryId: true
       },
     });
