@@ -1,80 +1,112 @@
-![Konecty](logo-konecty.png)
 
-# Konecty Open source Tech Business Platform
+# MVP Catalog Challenge
+---
 
-Nossa empresa está focada no desenvolvimento e manutenção de uma plataforma de código aberto, projetada para impulsionar o sucesso e a eficiência dos negócios de nossos clientes.
+## 💻 Sobre o projeto
 
-Somos uma empresa repleta de oportunidades, inspiração e liberdade. Seja trabalhando no desenvolvimento de UX/UI, ou utilizando as ultimas tecnologias de backend e inteligência artificial, ou oferecendo suporte aos nossos clientes!
+📲 MVP Catalog Challenge - Este projeto é uma aplicação web de lista de produtos, desenvolvida como parte de um desafio técnico. A aplicação foi construída utilizando Next.js, TypeScript, TailwindCSS e Jest para testes unitários. A aplicação exibe uma lista de produtos, com filtragem por categoria e pesquisa por nome do produto.
 
-Valorizamos a diversidade e inclusão, convidando candidatos de todos os backgrounds a se juntarem a nós. Aqui, você será tratado com honestidade e respeito; comprometemo-nos a apoiar você e sua carreira, oferecendo um ambiente que nutre a inovação e o pensamento criativo.
+---
 
-**Por que se juntar a nós?**
-- **Impacto Significativo:** Seu trabalho terá um impacto direto no negócio do cliente, melhorando a eficiência e a produtividade dos ecosistema que utiliza nossa plataforma.
-- **Benefícios Concretos:** Oferecemos flexibilidade de horário, trabalho remoto e uma cultura que valoriza o equilíbrio entre vida pessoal e profissional.
-- **Ambiente Diversificado:** Estamos comprometidos com a criação de um ambiente de trabalho inclusivo e acolhedor para todos.
-- **Iniciantes São bem vindos:** Encorajamos candidatos que estão começando suas carreiras a se candidatarem. Oferecemos treinamento, mentorias e oportunidades para que você cresça profissionalmente dentro de nossa equipe.
+### Funcionalidades
+- Exibição de uma lista de produtos.
+- Filtro por categoria.
+- Pesquisa por nome de produto.
+- Testes unitários com Jest.
 
+---
 
-## Vagas abertas
-
-### Pessoa Especialista em DevOps - Foco em Kubernetes e CI/CD
-
-**Localização:** Remoto
+## 🚀 Como executar o projeto
 
 
-**Visão Geral da Oportunidade:**
-
-Na Konecty Informática Ltda, estamos ampliando nossa equipe e buscamos uma pessoa especialista em DevOps que compartilhe de nossa paixão por inovação, automação e tecnologia. Com um enfoque especial em Kubernetes, ArgoCD, GitOps, Docker, GitHub Actions, Grafana, Prometheus, Jaeger e MongoDB, esta posição é uma convocação para pessoas que estão começando sua jornada profissional ou que desejam aprofundar seus conhecimentos em um ambiente que valoriza a aprendizagem contínua, a inclusão e a diversidade.
 
 
-**Responsabilidades Principais:**
+### Pré-requisitos
 
-- Gerenciar e otimizar processos de orquestração de contêineres com Kubernetes.
-- Desenvolver e manter pipelines de integração e entrega contínua (CI/CD) utilizando ArgoCD e GitHub Actions.
-- Implementar estratégias de GitOps para uma gestão eficaz de infraestrutura e aplicações.
-- Administrar ambientes baseados em contêineres com Docker, promovendo consistência e eficiência.
-- Monitorar a performance e a saúde das aplicações e da infraestrutura usando ferramentas como Grafana, Prometheus e Jaeger.
-- Gerenciar bases de dados MongoDB, Redis e Cassandra assegurando sua robustez e disponibilidade.
+Antes de começar, você vai precisar ter instalado em sua máquina as seguintes ferramentas:
+[Git](https://git-scm.com), [Node.js](https://nodejs.org/en/). 
+Além disto é bom ter um editor para trabalhar com o código como [VSCode](https://code.visualstudio.com/)
 
 
-**Qualificações Desejadas:**
+### Executando a aplicação
 
-- Familiaridade com Kubernetes, ArgoCD, GitOps, Docker, GitHub Actions, Grafana, Prometheus, Jaeger e MongoDB.
-- Disposição para aprender em um ritmo acelerado e se adaptar a novas tecnologias.
-- Habilidade para trabalhar de forma colaborativa em um ambiente diversificado e inclusivo.
-- Capacidade de comunicação eficaz e construtiva, valorizando a diversidade de pensamentos e soluções.
+```bash
+# Clone este repositório
+$ git clone https://github.com/gsantos20/mvp-catalog.git
+
+# Acesse a pasta do projeto no terminal/cmd
+$ cd mvp-catalog
+
+# Instale as dependências
+$ yarn
+ou
+$ npm i
+
+# Instale as dependências do prisma
+$ npx prisma migrate
+
+# Execute a aplicação em modo de desenvolvimento
+$ yarn dev
+ou
+$ npm run dev
+```
+
+#### O servidor inciará na porta: 3000 - acesse http://localhost:3000 
+
+### ⚙ Executar Testes Unitarios
 
 
-**O Que Oferecemos:**
+```bash
+# No Terminal use os seguintes comandos
 
-- Um papel remoto com flexibilidade, permitindo que você trabalhe de onde se sentir mais confortável e produtivo(a).
-- Um ambiente de trabalho seguro, acolhedor e inclusivo, onde você pode crescer profissionalmente.
-- Acesso a mentoria e oportunidades de desenvolvimento para aprimorar suas habilidades em tecnologias emergentes.
-
-
-**Como Aplicar:**
-
-Para se candidatar, envie seu currículo e uma carta de apresentação (opcional) que destaque sua paixão por DevOps e tecnologia, e como você pode contribuir para um ambiente de trabalho mais diverso e inclusivo, para: [hr@konecty.com](mailto:hr@konecty.com).
+$ yarn test
+ou
+$ npm run dev
+```
 
 
-### Pessoa Desenvolvedora Fullstack
+## 🛠 Tecnologias
 
-**Localização**: Remoto
+As seguintes ferramentas foram usadas na construção do projeto:
 
-**Responsabilidades:**
 
-- Desenvolver e manter aplicações web utilizando NodeJS, NextJS, React, TailwindCSS e MongoDB.
-- Integrar serviços back-end com interfaces de usuário front-end.
-- Escrever código limpo, testável e eficiente.
-- Participar de revisões de código e contribuir para a melhoria contínua de nossos processos de desenvolvimento.
+#### **Web App**  ([Next.js](https://nextjs.org/)  +  [TypeScript](https://www.typescriptlang.org/)  +  [Tailwind](https://tailwindcss.com/))
 
-**Requisitos:**
+-   **[Prisma](https://www.prisma.io/)**
+-   **[Shacdn/ui](https://ui.shadcn.com/)**
+-   **[react-icons](https://react-icons.github.io/react-icons/)**
+-   **[zod](https://zod.dev/)**
+-   **[zod-form-data](https://www.npmjs.com/package/zod-form-data)**
 
-- Conhecimento em NodeJS, React, Typescript e MongoDB. É desejável ter conhecimento em NextJS, TailwindCSS e Jest, que são tecnologias também utilizadas diariamente nos projetos.
-- Capacidade de aprender rapidamente e adaptar-se a novas tecnologias.
-- Boas práticas de codificação, incluindo compreensão de padrões de projeto e teste unitário.
-- Forte habilidade de resolução de problemas e pensamento analítico.
+> Veja o arquivo  [package.json](https://github.com/gsantos20/mvp-catalog/blob/main/package.json)
 
-**Desafio Técnico:**
+## 🧾 Conceitos utilizados
 
-Para participar do processo seletivo, leia a especificação disponível em [fullstack/desafio.md](fullstack/desafio.md) neste repositório, e envie um pull-request para este repositório com uma solução para o desafio ou uma de suas ideias incríveis. Estamos ansiosos para ver o seu talento em ação e como você pode contribuir para o nosso objetivo de criar a melhor plataforma de código aberto do mercado.
+- SOLID
+- SSR
+- Server Components
+
+## 🦸 Autor
+
+<div>
+ <img style="border-radius: 50%;" src="https://avatars3.githubusercontent.com/u/100292023?s=460&u=61b426b901b8fe02e12019b1fdb67bf0072d4f00&v=4" width="100px;" alt=""/>
+   <br />
+ <sub><b>Gustavo Santos</b></sub></a> <a href="https://www.linkedin.com/in/gsantos20">🚀</a>
+</div>
+ <br />
+
+<div>
+  <a href="https://instagram.com/guuztta" target="_blank"><img src="https://img.shields.io/badge/-Instagram-%23E4405F?style=for-the-badge&logo=instagram&logoColor=white" target="_blank"></a>
+  <a href ="mailto:nerisgs20@gmail.com"><img src="https://img.shields.io/badge/Gmail-D14836?style=for-the-badge&logo=gmail&logoColor=white" target="_blank"></a>
+  <a href="https://www.linkedin.com/in/gsantos20" target="_blank"><img src="https://img.shields.io/badge/-LinkedIn-%230077B5?style=for-the-badge&logo=linkedin&logoColor=white" target="_blank"></a>
+</div>
+
+---
+
+## 📝 Licença
+
+Este projeto esta sobe a licença [MIT](./LICENSE).
+
+Feito com ❤️ por Gustavo Santos 👋🏽 [Entre em contato!](https://www.linkedin.com/in/gsantos20/)
+
+---
