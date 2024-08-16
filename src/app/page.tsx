@@ -9,13 +9,8 @@ import { fetchProducts } from "@/services/products";
 import { Category as TCategory } from "@prisma/client";
 import { useEffect, useState } from "react";
 
-type HomeProps = {
-  dataP: TProductWithCategory[]
-  dataC: TCategory[]
-}
 
-
-export const Home: React.FC<HomeProps> = ({ dataP, dataC }) => {
+export const Home: React.FC= () => {
   const [products, setProducts] = useState<TProductWithCategory[]>([]);
   const [filteredProducts, setFilteredProducts] = useState<TProductWithCategory[]>([]);
   const [categories, setCategories] = useState<TCategory[]>([]);
@@ -23,7 +18,8 @@ export const Home: React.FC<HomeProps> = ({ dataP, dataC }) => {
     useEffect(() => {
 
       const getData = async () => {
-        console.log(dataP, dataC)
+        const dataP = await fetchProducts()
+        const dataC = await fetchCategories()
         setProducts(dataP);
         setFilteredProducts(dataP);
         setCategories(dataC);
